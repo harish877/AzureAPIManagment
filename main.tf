@@ -4,14 +4,6 @@ provider "azurerm" {
   features {}
 }
 
-variable "resource_group_name" {
-  type        = string
-}
-
-variable "apim_name" {
-  type        = string
-}
-
 resource "azurerm_resource_group" "example" {
   name     = var.resource_group_name
   location = "West Europe"
