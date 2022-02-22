@@ -1,2 +1,2 @@
-# Main.tf
+# Sample Code
 Terraform azure API
