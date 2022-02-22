@@ -4,12 +4,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = var.resource_group_name
+  name     = "example-resource-group"
   location = "West Europe"
 }
 
 resource "azurerm_api_management" "example" {
-  name                = var.apim_name
+  name                = "example-apim"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   publisher_name      = "My Company"
